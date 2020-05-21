@@ -1,0 +1,50 @@
+.cube {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  perspective: 100vw;
+  perspective-origin: center center;
+}
+.cube .cubeTransition {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transform: translateZ(-50vh) rotateX(0deg);
+  transition: transform 1s ease-in-out;
+}
+.cube .cubeTransition section.cube-side {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.cube .cubeTransition section.front {
+  background-image: url(../img/1.jpg);
+  transform: translateZ(50vh);
+}
+.cube .cubeTransition section.top {
+  background-image: url(../img/2.jpg);
+  transform: translateY(50vh) rotateX(-90deg);
+}
+.cube .cubeTransition section.back {
+  background-image: url(../img/3.jpg);
+  transform: translateZ(-50vh) rotateX(-180deg);
+}
+.cube .cubeTransition section.bottom {
+  background-image: url(../img/4.jpg);
+  transform: translateY(-50vh) rotateY(0) rotateX(90deg);
+}
+.cube .cubeTransition section.front,
+.cube .cubeTransition section.top,
+.cube .cubeTransition section.bottom,
+.cube .cubeTransition section.back {
+  background-repeat: no-repeat;
+}
+.cube .cubeTransition section.front article h1,
+.cube .cubeTransition section.top article h1,
+.cube .cubeTransition section.bottom article h1,
+.cube .cubeTransition section.back article h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}

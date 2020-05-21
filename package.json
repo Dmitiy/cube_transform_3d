@@ -1,0 +1,24 @@
+{
+  "name": "cube_transform_3d",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gh-pages": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitiy/cube_transform_3d.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dmitiy/cube_transform_3d/issues"
+  },
+  "homepage": "https://github.com/Dmitiy/cube_transform_3d#readme"
+}
